@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site">
+	<name>mod_sliderj4</name>
+	<author>Salah JAAFAR</author>
+	<creationDate>Feb 2015</creationDate>
+	<copyright><![CDATA[Copyright (C) 2005 - 2023 Open Source Matters. All rights
+		reserved.]]></copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>me@grafich.com</authorEmail>
+	<authorUrl>techno.rn.tn</authorUrl>
+	<version>1.0.0</version>
+	<description>Slider Module Joomla 4</description>
+	<files>
+		<filename>mod_slider.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<form>
+			<fieldset name="basic" label="Basic">
+				<field name="slide1Img"
+					type="media"
+					label="Slide 1 Image"
+					description="Choose or upload image"
+					default=""
+				/>
+				<field name="slide1CaptionTitle"
+					type="text"
+					label="Slide 1 Caption Title"
+					default=""
+				/>
+				<field name="slide1CaptionText"
+					type="textarea"
+					label="Slide 1 Caption Text"
+					default=""
+				/>
+				<field name="slide2Img"
+					type="media"
+					label="Slide 2 Image"
+					description="Choose or upload image"
+					default=""
+				/>
+				<field name="slide2CaptionTitle"
+					type="text"
+					label="Slide 2 Caption Title"
+					default=""
+				/>
+				<field name="slide2CaptionText"
+					type="textarea"
+					label="Slide 2 Caption Text"
+					default=""
+				/>
+				<field name="slide3Img"
+					type="media"
+					label="Slide 3 Image"
+					description="Choose or upload image"
+					default=""
+				/>
+				<field name="slide3CaptionTitle"
+					type="text"
+					label="Slide 3 Caption Title"
+					default=""
+				/>
+				<field name="slide3CaptionText"
+					type="textarea"
+					label="Slide 3 Caption Text"
+					default=""
+				/>
+				<field name="slide4Img"
+					type="media"
+					label="Slide 4 Image"
+					description="Choose or upload image"
+					default=""
+				/>
+				<field name="slide4CaptionTitle"
+					type="text"
+					label="Slide 4 Caption Title"
+					default=""
+				/>
+				<field name="slide4CaptionText"
+					type="textarea"
+					label="Slide 4 Caption Text"
+					default=""
+				/>
+			</fieldset>
+		</form>
+	</config>
+</extension>
