@@ -1,14 +1,25 @@
 <?php
-/**
- * @package     Persada.Site
- * @subpackage  mod_slider
- *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
 defined('_JEXEC') or die;
 
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
 
-require JModuleHelper::getLayoutPath('mod_slider', $params->get('layout', 'default'));
+// Get the module parameters
+$params = JFactory::getApplication()->input->get('params');
+
+// Get the module layout
+$layout = $params->get('layout', 'default');
+
+// Get the module class suffix
+$moduleclass_sfx = $params->get('moduleclass_sfx', '');
+
+// Get the slider content
+$content = HTMLHelper::_('content.loadModule', 'mod_slider', $params);
+
+?>
+
+<div id="slider" class="flexslider <?php echo $moduleclass_sfx; ?>">
+  <ul class="slides">
+    <?php echo $content; ?>
+  </ul>
+</div>
